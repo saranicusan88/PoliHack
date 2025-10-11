@@ -1,0 +1,2 @@
+
+import "./WinnerCard.scss";
