@@ -29,27 +29,32 @@ Optimized for a great developer experience and quick public deployments.
 ## ⚙️ Quick Start
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/osutcj/PoliHack
 cd PoliHack
 ```
 
 ### 2️⃣ Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3️⃣ Start the development server
+
 ```bash
 npm run dev
 ```
 
 ### 4️⃣ Build for production
+
 ```bash
 npm run build
 ```
 
 ### 5️⃣ Preview the production build
+
 ```bash
 npm run preview
 ```
