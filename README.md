@@ -1,79 +1,105 @@
-PoliHack Frontend — Vite · React · JavaScript · SCSS · Ant Design
+# 🧠 PoliHack Website
 
-A fast, modern front-end starter for the PoliHack site. Built with Vite and React (JavaScript), styled with SCSS, and using Ant Design for production-ready UI components. Optimized for developer experience and quick deployments for the public site: https://polihack.osut.org
+A fast, modern **front-end starter** for the [PoliHack site](https://polihack.osut.org).  
+Built with **Vite + React (JavaScript)**, styled with **SCSS**, and powered by **Ant Design** for production-ready UI components.  
+Optimized for a great developer experience and quick public deployments.
 
-Key features
+---
 
-Vite-powered dev server and build pipeline (lightning-fast HMR)
+## 🚀 Key Features
 
-React (JavaScript) codebase — no TypeScript required
+- ⚡ **Vite-powered** dev server and build pipeline with lightning-fast HMR  
+- ⚛️ **React (JavaScript)** — simple, familiar, and flexible  
+- 🎨 **SCSS/Sass** for modular, maintainable global and component-level styles  
+- 🧩 **Ant Design (antd)** for accessible, consistent UI components  
+- 🧱 Clean project structure ready for pages, components, and assets  
+- ☁️ Builds to static assets, easily deployable on any host (e.g., Cloudflare)
 
-Global and component SCSS for modular, maintainable styles
+---
 
-Ant Design for accessible, consistent UI components
+## 🧰 Built With
 
-Clean project layout ready for pages, components, and assets
+- [Vite](https://vitejs.dev/)
+- [React (JSX)](https://react.dev/)
+- [SCSS / Sass](https://sass-lang.com/)
+- [Ant Design (antd)](https://ant.design/)
 
-Built with
+---
 
-- Vite
+## ⚙️ Quick Start
 
-- React (JSX)
-
-- SCSS / Sass
-
-- Ant Design (antd)
-
-Quick start
-# clone
-```
-git clone [<repo-url>](https://github.com/osutcj/PoliHack)
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/osutcj/PoliHack
 cd PoliHack
 ```
 
-# install
-```
+### 2️⃣ Install dependencies
+```bash
 npm install
 ```
 
-# dev server
-```
+### 3️⃣ Start the development server
+```bash
 npm run dev
 ```
 
-# build for production
-```
+### 4️⃣ Build for production
+```bash
 npm run build
 ```
 
-# preview production build
-```
+### 5️⃣ Preview the production build
+```bash
 npm run preview
 ```
 
-Styling & Ant Design notes
+🎨 Styling & Ant Design Notes
 
-Use SCSS files for global variables, mixins and component-level styles.
+- Use SCSS for:
 
-Ant Design components are used for UI building blocks — wrap or extend antd components with SCSS overrides where needed to match PoliHack branding.
++ Global variables and mixins
 
-Deployment
++ Component-level modular styles
 
-This project builds static assets ready to be served by any static host (right now, we are using Cloudflare), npm run build outputs optimized files to the dist/ folder.
+- Ant Design components serve as UI building blocks.
+You can wrap or extend them with SCSS overrides to align with PoliHack branding.
 
-Contributing
+🚀 Deployment
 
-Fork the repo
+This project builds static assets ready to serve from any static host.
 
-Create a feature branch (git checkout -b feat/my-feature)
+Run:
 
-# Commit your changes 
+npm run build
+
+
+The optimized build output is located in the dist/ directory.
+
+Currently deployed on Cloudflare.
+
+## 🤝 Contributing
+
+1. Fork the repository
+
+2. Create a feature branch
+
+```bash
+git checkout -b feat/my-feature
 ```
+
+3. Commit your changes
+
+```bash
 git commit -m "[ MESSAGE ]"
 ```
 
-Open a PR and describe your change
+4. Open a Pull Request and describe your change
 
-License
+## 📄 License
 
-MIT in LICENSE.
+This project is licensed under the MIT License.
+See the LICENSE
+ file for details.
+
+<i> 💡 Built with love by the OSUT team for PoliHack. </i>
