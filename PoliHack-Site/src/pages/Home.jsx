@@ -26,7 +26,7 @@ import Sponsor10 from "/src/assets/Sponsors/Netmatch.png";
 import Sponsor11 from "/src/assets/Sponsors/Zerotak.jpeg";
 
 function Home() {
-  var countDownDate = new Date("Apr 4, 2025 17:00:00").getTime();
+  var countDownDate = new Date("Nov 20, 2025 17:00:00").getTime();
 
   useEffect(() => {
     var x = setInterval(function () {
