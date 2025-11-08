@@ -283,20 +283,6 @@ function CurrentEdition() {
     { id: 28, image: MaraTurc, text: "Mara Turc" },
   ];
 
-  const sponsors = [
-      { id: 1,   name: "Sponsor 1",   logo: Sponsor1, url: "https://www.cloudflight.io/en/" },
-      { id: 2,   name: "Sponsor 2",   logo: Sponsor2, url: "https://www.aqirys.com/"  },
-      { id: 3,   name: "Sponsor 3",   logo: Sponsor3, url: "https://arobs.com/"  },
-      { id: 4,   name: "Sponsor 4",   logo: Sponsor4, url: "https://www.bigbelly-cluj.ro/"  },
-      { id: 5,   name: "Sponsor 5",   logo: Sponsor5, url: "https://csiromania.ro/"  },
-      { id: 6,   name: "Sponsor 6",   logo: Sponsor6, url: "https://finshape.com/"  },
-      { id: 7,   name: "Sponsor 7",   logo: Sponsor7, url: "https://www.invest-dej.com/"  },
-      { id: 8,   name: "Sponsor 8",   logo: Sponsor8, url: "https://www.marvo.ro/"  },
-      { id: 9,   name: "Sponsor 9",   logo: Sponsor9, url: "https://upevent.ro/"  },
-      { id: 10,  name: "Sponsor 10",  logo: Sponsor10, url: "https://www.qiagen.com/us"  },
-      { id: 11,  name: "Sponsor 11",  logo: Sponsor11, url: "https://zerotak.com/"  },
-    ];
-
   const programImage = DocumentBanner;
   const programLink = "/path/to/document1.pdf";
 
@@ -377,34 +363,8 @@ function CurrentEdition() {
             </Col>
           </Row>
         </div>
-
-        {/* Sponsors Section */}
-        <div className={styles.sponsorsSection}>
-          <h1 className={styles.headingHover}>Our Sponsors</h1>
-          <div className={styles.sponsors}>
-            <div className={styles.sponsorSlider}>
-              {sponsors.map((sponsor) => (
-                <div key={sponsor.id} className={styles.sponsorItem}>
-                  <a href={sponsor.url} target="_blank">
-                    <img src={sponsor.logo} alt={sponsor.name} />
-                  </a>
-                </div>
-              ))}
-              {sponsors.map((sponsor) => (
-                <div
-                  key={`duplicate-${sponsor.id}`}
-                  className={styles.sponsorItem}
-                >
-                  <a href={sponsor.url} target="_blank">
-                    <img src={sponsor.logo} alt={sponsor.name} />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </Content>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

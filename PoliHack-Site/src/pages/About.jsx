@@ -13,15 +13,13 @@ import TeamCard from "../components/TeamCard";
 
 // Team data
 
-import FilipCristian from "/src/assets/Team/FilipCristian.png";
-import ArimiaAndreea from "/src/assets/Team/ArimiaAndreea.png";
-import IonutDomniteanu from "/src/assets/Team/IonutDomniteanu.jpg";
+import OrmindeanVlad from "/src/assets/Team/OrmindeanVlad.jpg";
+import ClimaDiana from "/src/assets/Team/ClimDiana.jpg";
 import CordeaMaria from "/src/assets/Team/CordeaMaria.jpg";
-import IarinaBasa from "/src/assets/Team/IarinaBasa.jpg";
-import ZahariaAlina from "/src/assets/Team/ZahariaAlina.jpg";
-import IoanaAsandei from "/src/assets/Team/IoanaAsandei.jpg";
-import ClimDiana from "/src/assets/Team/ClimDiana.png";
-import ChirilaIulian from "/src/assets/Team/ChirilaIulian.png";
+import DolcaDiana from "/src/assets/Team/DolcaDianaAlina.jpg";
+import ConstandacheIonela from "/src/assets/Team/ConstandacheIonela.jpg";
+import ChirilaIulian from "/src/assets/Team/ChirilaIulian.jpg";
+import NebuneliAlessandro from "/src/assets/Team/NebuneliAlessandro.jpg";
 
 // Networking data
 
@@ -145,20 +143,20 @@ function About() {
           <Row className={styles.teamRow}>
             <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Filip Cristian"
+                name="Vlad Ormindean"
                 role="BC Responsible"
-                image={FilipCristian}
-                instagram="https://www.instagram.com/filip_cristi/"
-                facebook="https://www.facebook.com/filip.cristi.37"
+                image={OrmindeanVlad}
+                instagram="https://www.instagram.com/__vld._/"
+                facebook="https://www.facebook.com/vlad.ormindean.1"
               />
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Arimia Andreea"
+                name="Diana Clima"
                 role="Coordinator"
-                image={ArimiaAndreea}
-                instagram="https://www.instagram.com/andreeaa_stefaniaa/"
-                facebook="https://www.facebook.com/andreea.arimia"
+                image={ClimaDiana}
+                instagram="https://www.instagram.com/dianaa_clim/"
+                facebook="https://www.facebook.com/diana.clim.1/"
               />
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
@@ -175,42 +173,36 @@ function About() {
           <Row className={styles.teamRow}>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Clim Diana"
+                name="Constandache Ionela"
                 role="Co-coordinator"
-                image={ClimDiana}
-                instagram="https://www.instagram.com/dianaa_clim/"
-                facebook="https://www.facebook.com/diana.clim.1"
+                image={ConstandacheIonela}
+                instagram="https://www.instagram.com/ionellaa__/"
+                facebook="https://www.facebook.com/profile.php?id=100005939417604"
               />
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Asandei Ioana"
+                name="Dolca Diana Alina"
                 role="Co-coordinator"
-                image={IoanaAsandei}
-                instagram="https://www.instagram.com/ioana._.as?igsh=MTRjdDRweTJrejdldg%3D%3D&utm_source=qr"
-                facebook="https://www.facebook.com/share/18pTFEi3K7/?mibextid=wwXIfr"
+                image={DolcaDiana}
+                instagram="https://www.instagram.com/ddiana.alina/"
+                facebook="https://www.facebook.com/dianaalina.dolca"
               />
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Bașa Iarina"
+                name="Nebuneli Alessandro"
                 role="Co-coordinator"
-                image={IarinaBasa}
-                instagram="https://www.instagram.com/iarinabasa?igsh=MXF3MnBtb2VscXd2dQ%3D%3D&utm_source=qr"
-                facebook="https://www.facebook.com/iarinamaria.basa?mibextid=wwXIfr"
+                image={NebuneliAlessandro}
+                instagram="https://www.instagram.com/__alejrn3bu__/"
+                facebook="https://www.facebook.com/alessandro.junior2005"
               />
             </Col>
           </Row>
           {/* Last Row */}
           <Row className={styles.teamRow}>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Zaharia Alina"
-                role="Co-coordinator"
-                image={ZahariaAlina}
-                instagram="https://www.instagram.com/alinaazaharia/"
-                facebook="https://www.facebook.com/zaharia.alina13"
-              />
+             
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
@@ -222,18 +214,11 @@ function About() {
               />
             </Col>
             <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Domniteanu John"
-                role="PR Responsable"
-                image={IonutDomniteanu}
-                instagram="https://www.instagram.com/ionut.dom/"
-                facebook="https://www.facebook.com/ionut.domniteanu.583"
-              />
+              
             </Col>
           </Row>
         </div>
       </Content>
-      <Footer />
     </>
   );
 }
