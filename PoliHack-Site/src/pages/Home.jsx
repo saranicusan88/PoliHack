@@ -72,12 +72,19 @@ function Home() {
     <>
       <Header className={styles.header}></Header>
       <Content className={styles.content}>
-        <img className={styles.imageFluid} src={Banner} alt="Main Banner" />
-        <div className={styles.container}>
-          <h1 className={styles.heading}>#The Future Is Now!</h1>
-          <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
-          <h1 className={styles.subHeading} id="timer"></h1>
-        </div>
+        <section className={styles.hero}>
+          <img className={styles.imageFluid} src={Banner} alt="Main Banner" />
+          <div className={styles.heroContent}>
+            <h1 className={styles.heading}>#The Future Is Now!</h1>
+            <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
+            <p
+              className={styles.subHeading}
+              id="timer"
+              role="timer"
+              aria-live="polite"
+            ></p>
+          </div>
+        </section>
         <div className={styles.descriptionSection}>
           <h1 className={styles.headingHover}>What Is PoliHack?</h1>
           <p className={styles.description}>

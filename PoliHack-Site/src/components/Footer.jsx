@@ -51,36 +51,10 @@ export default function Footer() {
           <div className="col-lg-4 col-sm-12 d-none d-lg-block"></div>
           <div className="col-12 col-lg-3 col-sm-12 p-0">
             <div className="social-icons-container">
-              {/* Facebook */}
+              {/* Mail */}
               <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a
-                  href="https://www.facebook.com/PoliHack.OSUT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FacebookFilled className="w-100" />
-                </a>
-              </div>
-
-              {/* Instagram */}
-              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a
-                  href="https://www.instagram.com/polihack.osut/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramOutlined className="w-100" />
-                </a>
-              </div>
-
-              {/* TikTok */}
-              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a
-                  href="https://www.tiktok.com/@polihack.osut"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <TikTokOutlined className="w-100" />
+                <a href="mailto:contact@polihack.org" target="_blank" rel="noopener noreferrer">
+                  <MailOutlined className="w-100" />
                 </a>
               </div>
 
@@ -95,10 +69,36 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Mail */}
+              {/* Instagram */}
               <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a href="mailto:contact@polihack.org" target="_blank" rel="noopener noreferrer">
-                  <MailOutlined className="w-100" />
+                <a
+                  href="https://www.instagram.com/polihack.osut/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <InstagramOutlined className="w-100" />
+                </a>
+              </div>
+
+              {/* Facebook */}
+              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
+                <a
+                  href="https://www.facebook.com/PoliHack.OSUT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FacebookFilled className="w-100" />
+                </a>
+              </div>
+
+              {/* TikTok */}
+              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
+                <a
+                  href="https://www.tiktok.com/@polihack.osut"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TikTokOutlined className="w-100" />
                 </a>
               </div>
             </div>
