@@ -3,7 +3,11 @@
 :root {
   --primary-font: "Montserrat", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", Arial, sans-serif;
-  --primary: #000000;
+  --primary-background: #101019;
+  --surface-background: #15141f;
+  --primary-accent: #8b0000;
+  --primary-accent-dark: #380000;
+  --primary-accent-soft: rgba(139, 0, 0, 0.2);
   --font-size-title: clamp(1.6rem, 3vw, 2.8rem);
   --font-size-subtitle: clamp(1.1rem, 1.6vw, 1.8rem);
   --font-size-body: clamp(0.85rem, 0.95vw, 1rem);
@@ -32,7 +36,7 @@ html {
 }
 
 body {
-  background-color: var(--primary) !important;
+  background-color: var(--primary-background) !important;
   overflow-x: hidden !important;
   min-width: 100%;
   min-height: 100vh;
@@ -68,6 +72,11 @@ p,
 .description,
 .contact-info {
   font-size: var(--font-size-body);
+}
+
+::selection {
+  background: var(--primary-accent);
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {

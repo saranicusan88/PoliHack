@@ -1,8 +1,9 @@
 .footer-container {
-    // margin-top: 5rem;
     height: auto !important;
-    background-color: rgb(75, 0, 0, 0.75) !important;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(56, 0, 0, 0.95));
     padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.45);
 }
 
 .footer-content {

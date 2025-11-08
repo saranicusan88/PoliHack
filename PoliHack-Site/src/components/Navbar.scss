@@ -12,11 +12,12 @@
   justify-content: space-between;
 
   &.scrolled {
-    background: rgba(75, 0, 0) !important;
+    background: linear-gradient(110deg, var(--primary-accent), var(--primary-accent-dark)) !important;
     display: flex;
     justify-content: left !important;
     max-height: 6rem;
     align-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   }
 
   .container {
@@ -51,7 +52,7 @@
   }
 
   .text-white:hover, .navbar-brand:hover {
-    color: #a30000 !important;
+    color: var(--primary-accent) !important;
   }
 
   .nav-links {
@@ -73,7 +74,7 @@
           transition: color 0.3s ease-in-out;
 
           &:hover {
-            color: rgb(180, 0, 0) !important;
+            color: var(--primary-accent) !important;
           }
         }
       }
@@ -118,8 +119,7 @@
       margin-left: 0px;
     }
     &.scrolled {
-      background: rgba(75, 0, 0);
-      background: rgb(75, 0, 0);
+      background: linear-gradient(110deg, var(--primary-accent), var(--primary-accent-dark));
       max-height: 6rem;
     }
 
@@ -135,7 +135,7 @@
       top: 0 !important;
       left: 0 !important;
       height: 100vh;
-      background: rgb(75, 0, 0);
+      background: linear-gradient(135deg, var(--primary-accent), var(--primary-accent-dark));
       flex-direction: column;
       justify-content: center;
       align-items: center;
