@@ -17,7 +17,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem !important;
+    font-size: var(--font-size-title);
     color: white !important;
     z-index: 2;
     text-align: center;

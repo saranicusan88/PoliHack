@@ -18,14 +18,18 @@
 
 .UTCN_Logo {
     padding: 10px;
-    height: 80px !important;
+    height: 90px !important;
     width: auto;
+    max-width: 220px;
+    object-fit: contain;
 }
 
 .OSUT_Logo {
     padding: 10px;
-    height: 90px !important;
+    height: 96px !important;
     width: auto;
+    max-width: 230px;
+    object-fit: contain;
 }
 
 .align-center {
@@ -134,13 +138,11 @@
         align-items: center !important;
     }
 
-    .UTCN_Logo {
-        padding-left: 30px;
-        height: 60px !important;
-    }
-    
+    .UTCN_Logo,
     .OSUT_Logo {
+        padding-left: 30px;
         height: 70px !important;
+        max-width: 160px;
     }
     
     .right-content {

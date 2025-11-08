@@ -104,23 +104,24 @@ function Home() {
         </div>
         <div className={styles.sponsorsSection}>
           <h1 className={styles.headingHover}>Our Sponsors</h1>
-          <div className={styles.sponsors}>
-            <div className={styles.sponsorSlider}>
-              {sponsors.map((sponsor) => (
-                <div key={sponsor.id} className={styles.sponsorItem}>
-                  <a href={sponsor.url} target="_blank">
-                    <img src={sponsor.logo} alt={sponsor.name} />
-                  </a>
+          <p className={styles.sponsorIntro}>
+            Powered by partners that keep the hackathon moving forward.
+          </p>
+          <div className={styles.sponsorGrid} role="table" aria-label="Sponsors">
+            {sponsors.map((sponsor) => (
+              <a
+                key={sponsor.id}
+                className={styles.sponsorCard}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="row"
+              >
+                <div role="cell">
+                  <img src={sponsor.logo} alt={sponsor.name} loading="lazy" />
                 </div>
-              ))}
-              {sponsors.map((sponsor) => (
-                <div key={`duplicate-${sponsor.id}`} className={styles.sponsorItem}>
-                  <a href={sponsor.url} target="_blank">
-                    <img src={sponsor.logo} alt={sponsor.name} />
-                  </a>
-                </div>
-              ))}
-            </div>
+              </a>
+            ))}
           </div>
         </div>
       </Content>

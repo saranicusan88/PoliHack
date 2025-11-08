@@ -51,21 +51,14 @@ export default function Footer() {
           <div className="col-lg-4 col-sm-12 d-none d-lg-block"></div>
           <div className="col-12 col-lg-3 col-sm-12 p-0">
             <div className="social-icons-container">
-              {/* Mail */}
-              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a href="mailto:contact@polihack.org" target="_blank" rel="noopener noreferrer">
-                  <MailOutlined className="w-100" />
-                </a>
-              </div>
-
-              {/* LinkedIn */}
+              {/* Facebook */}
               <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
                 <a
-                  href="https://www.linkedin.com/in/polihack-6b767a335/"
+                  href="https://www.facebook.com/PoliHack.OSUT"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedinFilled className="w-100" />
+                  <FacebookFilled className="w-100" />
                 </a>
               </div>
 
@@ -80,17 +73,6 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Facebook */}
-              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
-                <a
-                  href="https://www.facebook.com/PoliHack.OSUT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FacebookFilled className="w-100" />
-                </a>
-              </div>
-
               {/* TikTok */}
               <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
                 <a
@@ -99,6 +81,24 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <TikTokOutlined className="w-100" />
+                </a>
+              </div>
+
+              {/* LinkedIn */}
+              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
+                <a
+                  href="https://www.linkedin.com/in/polihack-6b767a335/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedinFilled className="w-100" />
+                </a>
+              </div>
+
+              {/* Mail */}
+              <div className="p-2 p-lg-3 mt-2 mt-lg-3 footer-icon-social hover-image">
+                <a href="mailto:contact@polihack.org" target="_blank" rel="noopener noreferrer">
+                  <MailOutlined className="w-100" />
                 </a>
               </div>
             </div>
