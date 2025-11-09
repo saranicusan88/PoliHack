@@ -7,13 +7,14 @@ import Feedback from "./Feedback";
 import PastEdition from "./PastEdition";
 import Loading from "../components/Loading";
 import CurrentEdition from "./CurrentEdition";
+import Register from "./Register";
 import styles from "./App.module.scss";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500);
+    const timer = setTimeout(() => setIsLoading(false), 700);
     return () => clearTimeout(timer);
   }, []);
 
@@ -24,12 +25,12 @@ function App() {
         {!isLoading && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/current-edition" element={<CurrentEdition />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/current-edition" element={<CurrentEdition />} /> */}
           <Route path="/past-edition" element={<PastEdition />} />
           <Route path="/feedback" element={<Feedback />} />
           {/* <Route path="/gallery" element={<Gallery />} /> */}
-          {/* <Route path="/register" element={<Register />} /> */}
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </>
