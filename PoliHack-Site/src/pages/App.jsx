@@ -30,7 +30,7 @@ function App() {
           <Route path="/past-edition" element={<PastEdition />} />
           <Route path="/feedback" element={<Feedback />} />
           {/* <Route path="/gallery" element={<Gallery />} /> */}
-          <Route path="/register" element={<Register />} />
+          {/* <Route path="/register" element={<Register />} /> */}
         </Routes>
       </Router>
     </>

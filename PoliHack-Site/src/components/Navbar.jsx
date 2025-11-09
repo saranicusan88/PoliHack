@@ -63,7 +63,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/register" className="text-white" onClick={closeMenu}>
+              <NavLink to="https://forms.gle/EQrxtDr8uhcBnKyg9" target="_blank"  className="text-white" onClick={closeMenu}>
                 Register
               </NavLink>
             </li>
