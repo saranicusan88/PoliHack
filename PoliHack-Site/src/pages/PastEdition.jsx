@@ -78,9 +78,9 @@ function PastEdition() {
       <Content className={styles.content}>
         {/* Top Banner */}
         <div className={styles.bannerContainer}>
-          <img className={styles.bannerImage} src={Banner} alt="V16 EDITION" />
+          <img className={styles.bannerImage} src={Banner} alt="V17 EDITION" />
           <div className={styles.typewriter}>
-            <h1>POLHACK V.16 EDITION!</h1>
+            <h1>POLHACK V.17 EDITION!</h1>
           </div>
         </div>
         {/* Testimonials Section */}
@@ -102,6 +102,14 @@ function PastEdition() {
             innovate, create and redefine the future, all while having fun in
             the process. Join us for this exciting new edition and be part of
             the next big breakthrough!
+            <br />
+            Following this, PoliHack v.16 was held from December 5–8, 2024,
+            welcoming creative teams who brought their ideas to life as real
+            prototypes. Participants again worked on their own projects,
+            benefited from mentor support, and presented their work to an
+            experienced jury. This edition also included a Networking Night,
+            offering valuable opportunities to meet fellow innovators, sponsors,
+            and tech professionals.
           </p>
           <Carousel images={carouselImages} />
         </div>

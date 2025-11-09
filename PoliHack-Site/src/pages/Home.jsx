@@ -37,7 +37,7 @@ function Home() {
 
         if (distance < 0) {
           clearInterval(x);
-          timerElement.innerHTML = "Hackaton Has" + '\n' + "Ended!";
+          timerElement.innerHTML = "Hackaton Has" + "\n" + "Ended!";
         }
       }
     }, 1000);
@@ -65,18 +65,24 @@ function Home() {
         <div className={styles.descriptionSection}>
           <h1 className={styles.headingHover}>What Is PoliHack?</h1>
           <p className={styles.description}>
-            Now at its 17th edition, PoliHack is a bi-annual hackathon that
-            challenges university and high school students to push the limits of
-            their creativity and technical skills by developing innovative
-            solutions in one of four categories: Embedded, Cybersecurity, AppDev, Web, and
-            Junior.
-          </p>
-          <p className={styles.description}>
+            PoliHack is a 48-hour hackathon that brings together high school and
+            university students for an unforgettable experience of innovation,
+            teamwork, and creativity.
+            <br />
+            Now reaching its 18th edition, the event unfolds over three intense
+            days filled with learning, collaboration, and opportunities to turn
+            ideas into reality.
+            <br />
             Organized by the Student Organization of the Technical University of
-            Cluj-Napoca, PoliHack aims to encourage participants to collaborate
-            with esteemed mentors from both industry and academia, offering them
-            an authentic experience similar to what they would encounter in big
-            companies.
+            Cluj-Napoca (OSUT Cluj), PoliHack encourages participants to
+            collaborate with esteemed mentors from both industry and academia,
+            offering an authentic experience similar to what they would
+            encounter in big companies.
+            <br />
+            Whether you’re an experienced coder or just taking your first steps
+            into tech, all you need is a team of 3–5 passionate minds. Our
+            mentors will be there to guide, inspire, and support you as you
+            bring your ideas to life.
           </p>
         </div>
 
@@ -88,8 +94,6 @@ function Home() {
         {/* Page integration */}
         <About />
         <CurrentEdition />
-
-        
       </Content>
       <Footer />
     </>

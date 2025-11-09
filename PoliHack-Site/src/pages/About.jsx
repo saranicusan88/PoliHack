@@ -28,17 +28,16 @@ import Networking2 from "/src/assets/Images/Networking2.jpg";
 import Networking3 from "/src/assets/Images/Networking3.jpg";
 import Networking4 from "/src/assets/Images/Networking4.jpg";
 
-
 const { Header, Sider, Content } = Layout;
 
 function About() {
-  
   const imageObjects = [
     {
       src: Networking3,
       alt: "Networking",
       title: "PoliHack V.16 Networking",
-      caption: "Come and meet at a talk with our mentorss and other participants!",
+      caption:
+        "Come and meet at a talk with our mentorss and other participants!",
     },
     {
       src: Networking4,
@@ -56,27 +55,22 @@ function About() {
           {/* Text Section */}
           <h1 className={styles.headingHover}>Here is what we do</h1>
           <p className={styles.text}>
-            Are you ready for 48 hours of non-stop innovation, creativity, and
-            coding challenges? Grab your laptop, bring your ideas, and join us
-            for an unforgettable hackathon experience! Whether you’re an
-            experienced coder, a talented designer or simply looking for some
-            fun, PoliHack is the perfect place for you.
+            Are you a high school or university student passionate about coding
+            or innovation? Get ready to turn your ideas into reality at
+            PoliHack!
           </p>
           <p className={styles.text}>
-            Get involved in two intense days of hacking and networking. Form
-            teams of 3 to 5 friends, make new connections on the spot and
-            collaborate to build something amazing from scratch. Participate in
-            workshops led by industry professionals, receive valuable advice and
-            guidance from experienced mentors, but don’t forget to take a
-            breather—the chill zone awaits.
+            This hackathon is an unforgettable experience full of coding
+            challenges, trainings, and teamwork. Build your project from scratch
+            with your team, and make the most of the guidance provided by expert
+            mentors whenever you need it. When it’s time to take a break, our
+            chill zones give you the perfect space to recharge.
           </p>
           <p className={styles.text}>
-            Specifically designed for high school and university students eager
-            to showcase their talents and explore the fascinating world of
-            technology, PoliHack features several categories. Whether you’re
-            passionate about web design, mobile app development, embedded
-            systems, or just starting your tech journey, you’ll surely find a
-            place in one of our five categories:
+            With five exciting categories, there’s a challenge for everyone:
+            whether you’re into web design, app development, embedded systems,
+            cybersecurity, or just starting your tech journey, you’ll find your
+            place at PoliHack!
           </p>
         </div>
         <div className={styles.categoriesSection}>
@@ -85,56 +79,50 @@ function About() {
           <CategoryCard
             title="Web Development"
             icon="MenuUnfoldOutlined"
-            description="Unleash your creativity in the digital realm by designing captivating websites or browser-friendly applications that push the boundaries of user experience. This category invites you to craft engaging interfaces and explore innovative design concepts that leave a lasting impact."
+            description="Build captivating digital experiences by designing and developing innovative, browser-friendly websites.This category encourages creativity, problem-solving, and exploring the latest web technologies to craft something truly memorable."
           />
 
           {/* App Category */}
           <CategoryCard
             title="App Development"
             icon="MobileOutlined"
-            description="Dive into the mobile world and bring your ideas to life with cutting-edge applications. Whether you’re developing for iOS, Android or cross-platform environments, showcase your coding skills and redefine how users interact with technology. Transform your visions into functional and user-friendly apps!"
+            description="Redefine mobile interaction by transforming your ideas into functional, cutting-edge applications. Whether targeting iOS, Android, or cross-platform environments, this category lets you showcase coding skills while thinking about real-world user needs."
           />
 
           {/* Embedded Category */}
           <CategoryCard
             title="Embedded Systems"
             icon="AlertOutlined"
-            description="Explore the intriguing world of embedded systems, where you can create smart devices and pioneer advanced hardware solutions. This category empowers you to innovate and develop projects that play a vital role in shaping the ever-evolving landscape of technology. Your creations could revolutionize everyday experiences!"
+            description="Dive into the world of smart devices and advanced hardware solutions. Create projects that demonstrate creativity, technical skill, and innovation in shaping technology for everyday life. This category is perfect for exploring sensors, microcontrollers, and IoT concepts, turning ambitious ideas into tangible devices."
           />
 
           {/* Cybersecurity Category */}
           <CategoryCard
             title="Cybersecurity"
             icon="SafetyCertificateOutlined"
-            description="Embrace the digital frontier and protect the digital realm from threats. This category invites you to delve into the intricate world of cybersecurity, where you can develop robust defense mechanisms and implement advanced security measures to safeguard digital assets and networks."
+            description="Embrace the digital frontier by protecting digital assets and networks from threats. Explore the world of cybersecurity, develop robust defense mechanisms, and implement smart security solutions to safeguard the digital realm. You’ll learn to think like both a defender and a problem-solver, understanding real-world challenges in digital security."
           />
 
           {/* Junior Category */}
           <CategoryCard
             title="Junior"
             icon="UserOutlined"
-            description="For high school students, this category offers a unique opportunity to showcase their skills and creativity. Participants in this category can explore various domains, including web development, app development, embedded systems and cybersecurity. They can work on projects that align with their interests and passions, while also gaining valuable experience and exposure to the world of technology."
+            description="Designed for high school students, this category is a launchpad to explore web development, app development, embedded systems, and cybersecurity. Gain real-world experience, showcase creativity, and discover your passion for technology. Junior participants will get guidance tailored to their level, making it a perfect start for their journey into tech."
           />
         </div>
         <div className={styles.networkingSection}>
           <h1 className={styles.headingHover}>Networking</h1>
           <p className={styles.text}>
-            The networking night is the perfect opportunity to meet other
-            participants, mentors and volunteers in a friendly and relaxed
-            atmosphere. During this special event, you'll have the chance to
-            build lasting connections, expand your professional network and
-            explore new collaboration opportunities. We encourage open
-            discussions and the exchange of innovative ideas in an environment
-            that inspires creativity and growth.
+            Meet mentors, participants, and tech professionals, share
+            experiences, and build connections that last long after the event.
+            Whether you arrive with a concrete idea or just the desire to learn,
+            networking expands your horizons and makes you part of a passionate
+            innovation community.
           </p>
-          <Carousel images={imageObjects} interval={5000} />
+          <Carousel images={imageObjects} autoplay={false} />
           <p className={styles.text}>
-            Whether you're an experienced professional or an enthusiastic
-            newcomer, we invite you to join a community dedicated to technology
-            and innovative solutions. Come connect with passionate people, learn
-            and explore new perspectives while building impactful relationships!
-            Join us in shaping a dynamic environment where ideas turn into
-            reality and innovation knows no limits.
+            At PoliHack, every conversation could be the start of a new
+            adventure. Connect, collaborate, and leave your mark.
           </p>
         </div>
         <div className={styles.teamSection}>
@@ -150,7 +138,7 @@ function About() {
                 facebook="https://www.facebook.com/vlad.ormindean.1"
               />
             </Col>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Diana Clim"
                 role="Coordinator"
@@ -159,7 +147,7 @@ function About() {
                 facebook="https://www.facebook.com/diana.clim.1/"
               />
             </Col>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Cordea Maria"
                 role="Secretary"
@@ -171,7 +159,7 @@ function About() {
           </Row>
           {/* Middle Row */}
           <Row className={styles.teamRow}>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Constandache Ionela"
                 role="Co-coordinator"
@@ -180,7 +168,7 @@ function About() {
                 facebook="https://www.facebook.com/profile.php?id=100005939417604"
               />
             </Col>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Dolca Diana Alina"
                 role="Co-coordinator"
@@ -189,7 +177,7 @@ function About() {
                 facebook="https://www.facebook.com/dianaalina.dolca"
               />
             </Col>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Nebuneli Alessandro"
                 role="Co-coordinator"
@@ -201,21 +189,17 @@ function About() {
           </Row>
           {/* Last Row */}
           <Row className={styles.teamRow}>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
-             
-            </Col>
-            <Col span={7}  lg={8} md={12} sm={24} xs={24}>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}></Col>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}>
               <TeamCard
                 name="Chirila Iulian"
-                role="Tehnical Responsable"
+                role="Co-coordinator"
                 image={ChirilaIulian}
                 instagram="https://www.instagram.com/c.iulian08/"
                 facebook="https://www.facebook.com/profile.php?id=100084863419146"
               />
             </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              
-            </Col>
+            <Col span={7} lg={8} md={12} sm={24} xs={24}></Col>
           </Row>
         </div>
       </Content>
