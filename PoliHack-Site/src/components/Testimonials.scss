@@ -4,14 +4,14 @@
     
     .testimonials-title {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: var(--font-size-title);
       margin-bottom: 10px;
       color: #ffffff;
     }
     
     .testimonials-subtitle {
       text-align: center;
-      font-size: 1.1rem;
+      font-size: var(--font-size-subtitle);
       margin-bottom: 50px;
       color: #ffffff;
     }
@@ -104,14 +104,14 @@
     }
     
     .testimonial-name {
-      font-size: 25px;
+      font-size: var(--font-size-subtitle);
       margin-bottom: 10px;
       font-weight: bold;
       color: #ffffff;
     }
     
     .testimonial-text {
-      font-size: 20px;
+      font-size: var(--font-size-body);
       line-height: 1.5;
       color: #ffffff;
       margin-bottom: 15px;
@@ -128,7 +128,7 @@
       }
       
       .testimonial-status, .testimonial-company {
-        font-size: 20px;
+        font-size: var(--font-size-body);
         color: #ffffff;
       }
       
@@ -185,7 +185,7 @@
       }
       
       .modal-testimonial {
-        font-size: 1.1rem;
+        font-size: var(--font-size-body);
         line-height: 1.7;
         color: #ffffff;
         margin-bottom: 20px;

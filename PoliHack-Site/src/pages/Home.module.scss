@@ -1,9 +1,5 @@
 
-// General
-
-:root {
-  --top-spaceing: 7.5rem;
-}
+// General layout resets
 
 .header {
   display: contents;
@@ -13,12 +9,6 @@
 
 .content {
   background-color: transparent !important;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .headingHover {
@@ -35,52 +25,58 @@
   top: 0;
 }
 
-// Top Section
+// Hero Section
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(28rem, 55vw, 46rem);
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
 
 .imageFluid {
-  filter: opacity(0.6);
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(0.6);
+  display: block;
+}
+
+.heroContent {
+  position: absolute;
+  inset: 0;
+  padding: clamp(1.5rem, 4vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  text-align: center;
 }
 
 .heading {
-  position: absolute;
-  top: calc(var(--top-spaceing) + 3.5rem);
-  font-size: 72px;
-  font-weight: bold;
-  color: white !important;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .logo {
-  top: calc(var(--top-spaceing));
-  position: absolute;
-  max-width: 640px;
+  width: clamp(10rem, 25vw, 28rem);
+  max-width: 100%;
+  height: auto;
   animation: FadeUp 1.5s ease-in-out;
 }
 
 .subHeading {
-  position: absolute;
-  top: calc(var(--top-spaceing) + 30.5rem);
-  font-size: 72px;
-  font-weight: bold;
-  color: white !important;
-}
-
-// Description
-
-.descriptionSection {
-  background-color: transparent !important;
-  padding: 0rem 12rem;
-  padding-top: 5rem;
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
-.description {
-  background-color: transparent !important;
-  font-size: 24px;
-  color: white !important;
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  color: white;
+  min-height: 1.5em;
+  margin: 0;
 }
 
 @keyframes FadeUp {
@@ -94,109 +90,128 @@
   }
 }
 
+// Description
+
+.descriptionSection {
+  background-color: transparent !important;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 7vw, 10rem);
+}
+
+.description {
+  background-color: transparent !important;
+  font-size: var(--font-size-body);
+  line-height: 1.65;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
 // Sponsors
 
 .sponsorsSection {
   background-color: transparent !important;
-  padding: 0rem 12rem;
-  padding-top: 5rem;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
+  width: min(1200px, 100%);
+  margin: 0 auto 3rem;
+  padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 7vw, 10rem);
 }
 
-.sponsors {
-  display: flex;
-  overflow: hidden;
+.sponsorIntro {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-body);
+}
+
+.sponsorGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
   width: 100%;
-  position: relative;
-  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: clamp(1rem, 2.5vw, 2.5rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
-.sponsorSlider {
-  display: flex;
-  animation: slideLeft 30s linear infinite;
-  width: max-content;
-}
-
-.sponsorItem {
-  flex: 0 0 auto;
-  margin: 0 2rem;
-  height: 200px;
+.sponsorCard {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: clamp(1rem, 2vw, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 140px;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
 }
 
-.sponsorItem img {
-  max-height: 100%;
-  max-width: 10rem;
-  filter: grayscale(80%) brightness(0.9);
+.sponsorCard:hover,
+.sponsorCard:focus-visible {
+  border-color: #a10000;
+  background: rgba(161, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+.sponsorCard img {
+  max-width: 140px;
+  width: 100%;
+  filter: grayscale(40%) brightness(0.95);
   transition: filter 0.3s ease;
 }
 
-.sponsorItem img:hover {
-  filter: grayscale(0%) brightness(1.2);
+.sponsorCard:hover img,
+.sponsorCard:focus-visible img {
+  filter: grayscale(0%) brightness(1.15);
 }
 
-@keyframes slideLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+// Responsive tweaks
 
-// Mobile Device
-@media screen and (max-width: 768px) { 
-  .heading {
-    font-size: 36px;
-    position: absolute !important;
-    top: 6rem !important;
-  }
-
-  .subHeading {
-    max-width: 320px;
+@media screen and (max-width: 1024px) {
+  .headingHover {
     text-align: center;
   }
 
   .headingHover:hover::before {
-    content: "#";
-    position: absolute;
-    left: -1.3rem;
-    top: 0;
+    left: -1.5rem;
   }
 
-  .imageFluid {
-    width: 200%;
-    height: auto;
+  .sponsorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: clamp(24rem, 75vw, 30rem);
   }
 
-  .logo {
-    max-width: 172px;
+  .headingHover {
+    text-align: center;
   }
 
-  .descriptionSection {
-    margin-top: 3rem;
-    padding: 0rem 2rem;
+  .headingHover:hover::before {
+    left: -1.1rem;
   }
 
+  .descriptionSection,
   .sponsorsSection {
-    margin-top: 3rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
   }
 
-  .sponsorsSection {
-    padding: 0rem 2rem;
+  .sponsorGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroContent {
+    gap: 0.5rem;
   }
 
-  .subHeading {
-    top: 16.5rem;
-    font-size: 36px;
-  }
-
-  .footer-container {
-    margin-top: 0rem !important;
+  .sponsorCard {
+    min-height: 110px;
+    padding: 1.25rem;
   }
 }

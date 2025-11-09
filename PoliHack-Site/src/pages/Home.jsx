@@ -49,12 +49,19 @@ function Home() {
     <>
       <Header className={styles.header}></Header>
       <Content className={styles.content}>
-        <img className={styles.imageFluid} src={Banner} alt="Main Banner" />
-        <div className={styles.container}>
-          <h1 className={styles.heading}>#The Future Is Now!</h1>
-          <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
-          <h1 className={styles.subHeading} id="timer"></h1>
-        </div>
+        <section className={styles.hero}>
+          <img className={styles.imageFluid} src={Banner} alt="Main Banner" />
+          <div className={styles.heroContent}>
+            <h1 className={styles.heading}>#The Future Is Now!</h1>
+            <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
+            <p
+              className={styles.subHeading}
+              id="timer"
+              role="timer"
+              aria-live="polite"
+            ></p>
+          </div>
+        </section>
         <div className={styles.descriptionSection}>
           <h1 className={styles.headingHover}>What Is PoliHack?</h1>
           <p className={styles.description}>
@@ -71,6 +78,28 @@ function Home() {
             an authentic experience similar to what they would encounter in big
             companies.
           </p>
+        </div>
+        <div className={styles.sponsorsSection}>
+          <h1 className={styles.headingHover}>Our Sponsors</h1>
+          <p className={styles.sponsorIntro}>
+            Powered by partners that keep the hackathon moving forward.
+          </p>
+          <div className={styles.sponsorGrid} role="table" aria-label="Sponsors">
+            {sponsors.map((sponsor) => (
+              <a
+                key={sponsor.id}
+                className={styles.sponsorCard}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="row"
+              >
+                <div role="cell">
+                  <img src={sponsor.logo} alt={sponsor.name} loading="lazy" />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
 
         <Stats />
