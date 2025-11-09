@@ -55,7 +55,7 @@ function Home() {
             <h1 className={styles.heading}>#The Future Is Now!</h1>
             <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
             <p
-              className={styles.subHeading}
+              className={styles.timer}
               id="timer"
               role="timer"
               aria-live="polite"
@@ -79,36 +79,17 @@ function Home() {
             companies.
           </p>
         </div>
-        <div className={styles.sponsorsSection}>
-          <h1 className={styles.headingHover}>Our Sponsors</h1>
-          <p className={styles.sponsorIntro}>
-            Powered by partners that keep the hackathon moving forward.
-          </p>
-          <div className={styles.sponsorGrid} role="table" aria-label="Sponsors">
-            {sponsors.map((sponsor) => (
-              <a
-                key={sponsor.id}
-                className={styles.sponsorCard}
-                href={sponsor.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="row"
-              >
-                <div role="cell">
-                  <img src={sponsor.logo} alt={sponsor.name} loading="lazy" />
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+
+        {/* Sponsor section */}
+        <Sponsors />
 
         <Stats />
+
         {/* Page integration */}
         <About />
         <CurrentEdition />
 
-        {/* Sponsor section */}
-        <Sponsors />
+        
       </Content>
       <Footer />
     </>

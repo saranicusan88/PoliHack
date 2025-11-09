@@ -13,8 +13,8 @@ import TeamCard from "../components/TeamCard";
 
 // Team data
 
-import OrmindeanVlad from "/src/assets/Team/OrmindeanVlad.jpg";
-import ClimaDiana from "/src/assets/Team/ClimDiana.jpg";
+import OrmindeanVlad from "/src/assets/Team/OrmindeanVlad.jpeg";
+import ClimDiana from "/src/assets/Team/ClimDiana.jpg";
 import CordeaMaria from "/src/assets/Team/CordeaMaria.jpg";
 import DolcaDiana from "/src/assets/Team/DolcaDianaAlina.jpg";
 import ConstandacheIonela from "/src/assets/Team/ConstandacheIonela.jpg";
@@ -152,9 +152,9 @@ function About() {
             </Col>
             <Col span={7}  lg={8} md={12} sm={24} xs={24}>
               <TeamCard
-                name="Diana Clima"
+                name="Diana Clim"
                 role="Coordinator"
-                image={ClimaDiana}
+                image={ClimDiana}
                 instagram="https://www.instagram.com/dianaa_clim/"
                 facebook="https://www.facebook.com/diana.clim.1/"
               />

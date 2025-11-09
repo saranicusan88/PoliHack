@@ -19,7 +19,7 @@ function Register() {
         <div className={styles.formContainer}>
           <iframe
             className={styles.form}
-            src="https://docs.google.com/forms/d/e/1FAIpQLSe7UsnfNKoZYfhPPdDzdxwB_XFSP_g0TCpKb9q3YpQSB6bceg/viewform?embedded=true"
+            src="https://forms.gle/EQrxtDr8uhcBnKyg9"
             width="940"
             height="1250"
             frameborder="0"

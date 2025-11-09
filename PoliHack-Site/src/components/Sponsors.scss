@@ -44,6 +44,26 @@
   filter: grayscale(0%) brightness(1.2);
 }
 
+.sponsorIntro {
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-body);
+}
+
+.sponsorTitle {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sponsorTitle:hover::before {
+  content: "#";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+}
+
 @keyframes slideLeft {
   0% {
     transform: translateX(0);
@@ -66,5 +86,9 @@
 
   .sponsorItem img {
     max-width: 7rem;
+  }
+
+  .sponsorTitle:hover::before {
+    left: -1.5rem;
   }
 }

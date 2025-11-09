@@ -33,7 +33,10 @@ function Sponsors() {
     return (
         <>
             <div className="sponsorsSection">
-            <h1 className="headingHover">Our Sponsors</h1>
+            <h1 className="sponsorTitle">Our Sponsors</h1>
+            <p className="sponsorIntro">
+                Powered by partners that keep the hackathon moving forward.
+            </p>
                 <div className="sponsors">
                     <div className="sponsorSlider">
                     {sponsors.map((sponsor) => (
