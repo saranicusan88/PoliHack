@@ -132,7 +132,7 @@ export default function Footer() {
                 Contact Info
               </h3>
               <p className="text-white contact-info text-bold">
-                Filip Cristian - BC Responsible
+                Ormindean Vlad - BC Responsible
               </p>
               <p className="text-white contact-info">
                 Phone Number: +40 743 135 003
