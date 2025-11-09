@@ -1,20 +1,21 @@
-// Feedback.jsx
+// Register.jsx
 
 "use client";
 
 import Footer from "../components/Footer";
+import styles from "./Register.module.scss";
 import Loading from "../components/Loading";
-import styles from "./Feedback.module.scss";
 import { Flex, Layout } from "antd";
 
 const { Header, Sider, Content } = Layout;
 
-function Feedback() {
+function Register() {
   return (
     <>
       <Header className={styles.header}></Header>
       <Content className={styles.content} id="background">
-        {/* Feedback Form */}
+
+        {/* Register Form */}
         <div className={styles.formContainer}>
           <iframe
             className={styles.form}
@@ -34,4 +35,4 @@ function Feedback() {
   );
 }
 
-export default Feedback;
+export default Register;

@@ -42,16 +42,16 @@ export default function Navbar() {
         </button>
         <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <ul>
-            <li>
+            {/* <li>
               <NavLink to="/about" className="text-white" onClick={closeMenu}>
                 About us
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink to="/current-edition" className="text-white" onClick={closeMenu}>
                 Current Edition
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/past-edition" className="text-white" onClick={closeMenu}>
                 Past Edition
@@ -60,6 +60,11 @@ export default function Navbar() {
             <li>
               <NavLink to="/feedback" className="text-white" onClick={closeMenu}>
                 Feedback
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/register" className="text-white" onClick={closeMenu}>
+                Register
               </NavLink>
             </li>
             <li>

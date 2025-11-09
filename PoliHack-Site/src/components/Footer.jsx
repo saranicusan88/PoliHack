@@ -135,19 +135,19 @@ export default function Footer() {
                 Filip Cristian - BC Responsible
               </p>
               <p className="text-white contact-info">
-                Phone Number: 0760993125
+                Phone Number: +40 743 135 003
               </p>
               <p className="text-white contact-info">
-                Email: cristifilip2002@gmail.com
+                Email: ormindeanvlad@gmail.com
               </p>
               <p className="text-white contact-info text-bold">
-                Arimia Andreea - Coordinator
+                Diana Clim - Coordinator
               </p>
               <p className="text-white contact-info">
-                Phone Number:  0762385168
+                Phone Number:  +40 754 477 751
               </p>
               <p className="text-white contact-info">
-                Email: arimiaandreeastefania@gmail.com
+                Email: clim.diana2017@gmail.com
               </p>
             </div>
           </div>
