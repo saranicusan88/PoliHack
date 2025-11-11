@@ -54,7 +54,7 @@ export default function Navbar() {
             </li> */}
             <li>
               <NavLink to="/past-edition" className="text-white" onClick={closeMenu}>
-                Past Edition
+                Past Editions
               </NavLink>
             </li>
             <li>

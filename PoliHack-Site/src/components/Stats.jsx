@@ -9,7 +9,7 @@ const stats = [
   { id: 1, name: "Editions", value: "17" },
   { id: 2, name: "Participants", value: "1500+" },
   { id: 3, name: "Sponsors", value: "50+" },
-  { id: 4, name: "Reach", value: "2500+" },
+  { id: 4, name: "Reach", value: "2550+" },
 ];
 
 export default function Stats() {

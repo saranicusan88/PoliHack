@@ -75,25 +75,12 @@ function About() {
         </div>
         <div className={styles.categoriesSection}>
           <h1 className={styles.headingHover}>Categories</h1>
-          {/* Web Category */}
-          <CategoryCard
-            title="Web Development"
-            icon="MenuUnfoldOutlined"
-            description="Build captivating digital experiences by designing and developing innovative, browser-friendly websites.This category encourages creativity, problem-solving, and exploring the latest web technologies to craft something truly memorable."
-          />
 
           {/* App Category */}
           <CategoryCard
             title="App Development"
             icon="MobileOutlined"
             description="Redefine mobile interaction by transforming your ideas into functional, cutting-edge applications. Whether targeting iOS, Android, or cross-platform environments, this category lets you showcase coding skills while thinking about real-world user needs."
-          />
-
-          {/* Embedded Category */}
-          <CategoryCard
-            title="Embedded Systems"
-            icon="AlertOutlined"
-            description="Dive into the world of smart devices and advanced hardware solutions. Create projects that demonstrate creativity, technical skill, and innovation in shaping technology for everyday life. This category is perfect for exploring sensors, microcontrollers, and IoT concepts, turning ambitious ideas into tangible devices."
           />
 
           {/* Cybersecurity Category */}
@@ -103,12 +90,27 @@ function About() {
             description="Embrace the digital frontier by protecting digital assets and networks from threats. Explore the world of cybersecurity, develop robust defense mechanisms, and implement smart security solutions to safeguard the digital realm. You’ll learn to think like both a defender and a problem-solver, understanding real-world challenges in digital security."
           />
 
+          {/* Embedded Category */}
+          <CategoryCard
+            title="Embedded Systems"
+            icon="AlertOutlined"
+            description="Dive into the world of smart devices and advanced hardware solutions. Create projects that demonstrate creativity, technical skill, and innovation in shaping technology for everyday life. This category is perfect for exploring sensors, microcontrollers, and IoT concepts, turning ambitious ideas into tangible devices."
+          />
+
+          {/* Web Category */}
+          <CategoryCard
+            title="Web Development"
+            icon="MenuUnfoldOutlined"
+            description="Build captivating digital experiences by designing and developing innovative, browser-friendly websites.This category encourages creativity, problem-solving, and exploring the latest web technologies to craft something truly memorable."
+          />
+
           {/* Junior Category */}
           <CategoryCard
             title="Junior"
             icon="UserOutlined"
             description="Designed for high school students, this category is a launchpad to explore web development, app development, embedded systems, and cybersecurity. Gain real-world experience, showcase creativity, and discover your passion for technology. Junior participants will get guidance tailored to their level, making it a perfect start for their journey into tech."
           />
+          
         </div>
         <div className={styles.networkingSection}>
           <h1 className={styles.headingHover}>Networking</h1>

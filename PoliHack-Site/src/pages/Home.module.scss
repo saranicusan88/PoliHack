@@ -16,6 +16,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
+  margin-left: 12rem;
 }
 
 .headingHover:hover::before {
@@ -104,10 +105,13 @@
 .descriptionSection {
   background-color: transparent !important;
   margin: 0 auto;
-  padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 7vw, 10rem);
 }
 
 .description {
+  padding: 0rem 12rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
   text-align: justify;
   background-color: transparent !important;
   font-size: var(--font-size-body);
@@ -222,6 +226,10 @@
     text-align: center;
   }
 
+  .description {
+    padding: 0rem 1rem;
+  }
+
   .timer {
     font-size: 2.5rem;
   }
@@ -239,6 +247,14 @@
 
   .heroContent {
     gap: 0.5rem;
+  }
+
+  .headingHover:hover::before {
+    left: -0.9rem;
+  }
+
+  .headingHover {
+    margin-left: 1rem;
   }
 
   .timer {

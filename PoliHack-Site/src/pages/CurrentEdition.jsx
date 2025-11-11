@@ -284,7 +284,7 @@ function CurrentEdition() {
   ];
 
   const programImage = DocumentBanner;
-  const programLink = "/path/to/document1.pdf";
+  const programLink = "https://drive.google.com/file/d/1wqj7VHUeTztDJjUdvJdGxabbkIwPVLq6/view?usp=sharing";
 
   const themeImage = DocumentBanner;
 
@@ -297,7 +297,8 @@ function CurrentEdition() {
       <Header className={styles.header}></Header>
       <Content className={styles.content}>
         {/* Judges Section */}
-        <div className={styles.judgesSection}>
+        
+        {/* <div className={styles.judgesSection}>
           <h1 className={styles.headingHover}>Judges</h1>
           <Slider
             slides={judgesObjects}
@@ -305,10 +306,11 @@ function CurrentEdition() {
             autoplay={true}
             displayTime={4000}
           />
-        </div>
+        </div> */}
 
         {/* Mentors Section */}
-        <div className={styles.mentorsSection}>
+
+        {/* <div className={styles.mentorsSection}>
           <h1 className={styles.headingHover}>Mentors</h1>
           <Slider
             slides={mentorsObjects}
@@ -317,10 +319,11 @@ function CurrentEdition() {
             displayTime={4500}
             div
           />
-        </div>
+        </div> */}
 
         {/* Volunteers Section */}
-        <div className={styles.volunteersSection}>
+
+        {/* <div className={styles.volunteersSection}>
           <h1 className={styles.headingHover}>Volunteers</h1>
           <Slider
             slides={volunteersObjects}
@@ -329,7 +332,7 @@ function CurrentEdition() {
             displayTime={5000}
             div
           />
-        </div>
+        </div> */}
 
         {/* Documents Section */}
         <div className={styles.documentsSection}>

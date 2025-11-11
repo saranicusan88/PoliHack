@@ -17,7 +17,7 @@ import Banner from "/src/assets/MainBanner.gif";
 import Logo from "/src/assets/Logos/LogoWhite.png";
 
 function Home() {
-  var countDownDate = new Date("Nov 20, 2025 17:00:00").getTime();
+  var countDownDate = new Date("Nov 20, 2025 23:59:59").getTime();
 
   useEffect(() => {
     var x = setInterval(function () {
@@ -52,8 +52,9 @@ function Home() {
         <section className={styles.hero}>
           <img className={styles.imageFluid} src={Banner} alt="Main Banner" />
           <div className={styles.heroContent}>
-            <h1 className={styles.heading}>#The Future Is Now!</h1>
+            <h1 className={styles.heading}>#Engineering the future!</h1>
             <img className={styles.logo} src={Logo} alt="Logo PoliHack" />
+            <h1 className={styles.heading}>Registration ends in:</h1>
             <p
               className={styles.timer}
               id="timer"
