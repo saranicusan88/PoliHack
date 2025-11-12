@@ -58,6 +58,11 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/past-editions-2" className="text-white" onClick={closeMenu}>
+                Past Editions 2
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/feedback" className="text-white" onClick={closeMenu}>
                 Feedback
               </NavLink>
