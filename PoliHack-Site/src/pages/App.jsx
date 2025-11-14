@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Feedback from "./Feedback";
 import PastEdition from "./PastEdition";
+import PastEditionsTwo from "./PastEditionsTwo";
 import Loading from "../components/Loading";
 import CurrentEdition from "./CurrentEdition";
 import Register from "./Register";
@@ -28,6 +29,7 @@ function App() {
           {/* <Route path="/about" element={<About />} /> */}
           {/* <Route path="/current-edition" element={<CurrentEdition />} /> */}
           <Route path="/past-edition" element={<PastEdition />} />
+          <Route path="/past-editions-2" element={<PastEditionsTwo />} />
           <Route path="/feedback" element={<Feedback />} />
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/register" element={<Register />} /> */}

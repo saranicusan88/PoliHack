@@ -103,7 +103,7 @@ function PastEdition() {
             the process. Join us for this exciting new edition and be part of
             the next big breakthrough!
             <br />
-            Following this, PoliHack v.16 was held from December 5–8, 2024,
+            Following this, PoliHack v.16 was held from December 5-8, 2024,
             welcoming creative teams who brought their ideas to life as real
             prototypes. Participants again worked on their own projects,
             benefited from mentor support, and presented their work to an
