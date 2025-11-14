@@ -124,62 +124,63 @@ function PastEditionsTwo() {
 
   const editionDetails = {
     v15: {
-      label: "V.15",
-      year: "2023",
-      title: "PoliHack V.15",
-      heroText: "Va pupa Josan nu stiu ce sa scriu aici va pwp <3",
-      dates: "12-14 April, 2023",
-      location: "Cluj Bussiness Campus, Cloudflight Office",
+      label: "v.15",
+      year: "2024",
+      title: "PoliHack v.15",
+      heroText: "PoliHack v.15 stood out with a dynamic Networking Night, bringing together passionate young innovators who worked for 48 hours to develop functional prototypes in Web Development, App Development, Embedded Systems, and a special Junior category for high school students. Teams benefited from mentorship and jury feedback, showcasing creativity, teamwork, and the drive to turn ideas into real-world solutions.",
+      dates: "12-14 April 2024",
+      location: "Cloudflight Office",
       stats: [
-        { label: "Participants", value: 420 },
-        { label: "Teams", value: 420 },
-        { label: "Mentors", value: 420 },
+        { label: "Participants", value: 131 },
+        { label: "Teams", value: 32 },
+        { label: "Mentors", value: 16 },
       ],
       winnerCategories: [
-        { category: "App", team: "Arsenal", image: v15App },
+        { category: "AppDev", team: "Arsenal", image: v15App },
         { category: "Embedded", team: "PussInBoots", image: v15Embedded },
-        { category: "Junior", team: "Pulsar", image: v15Junior },
         { category: "Web", team: "Fly Projecta", image: v15Web },
+        { category: "Junior", team: "Pulsar", image: v15Junior },
       ],
     },
     v16: {
-      label: "V.16",
+      label: "v.16",
       year: "2024",
-      title: "PoliHack V.16",
-      heroText: "Va pupa Josan nu stiu ce sa scriu aici va pwp <3",
-      dates: "5-8 December, 2024",
-      location: "Cluj Bussiness Campus, Cloudflight Office",
+      title: "PoliHack v.16",
+      heroText: "PoliHack v.16 distinguished itself through the Originality Award, rewarding teams that impressed the jury with their creativity and innovation. Participants developed real prototypes, received guidance from mentors, and presented their projects to an experienced jury, while enjoying opportunities to connect with fellow innovators, sponsors, and tech professionals.",
+      dates: "5-8 December 2024",
+      location: "Cloudflight Office",
       stats: [
-        { label: "Participants", value: 420 },
-        { label: "Teams", value: 420 },
-        { label: "Mentors", value: 420 },
+        { label: "Participants", value: 163 },
+        { label: "Teams", value: 36 },
+        { label: "Mentors", value: 12 },
       ],
       winnerCategories: [
         { category: "AppDev", team: "StackBytes", image: v16App },
-        { category: "Web", team: "${team}", image: v16Web },
         { category: "Embedded", team: "Arrow", image: v16Embedded },
+        { category: "Web", team: "${team}", image: v16Web },
         { category: "Junior", team: "CaffeineOverflow", image: v16Junior },
         { category: "Originalitate", team: "main.c", image: v16Originalitate },
       ],
     },
     v17: {
-      label: "V.17",
+      label: "v.17",
       year: "2025",
-      title: "PoliHack V.17",
-      heroText: "Va pupa Josan nu stiu ce sa scriu aici va pwp <3",
-      dates: "12-14 April, 2025",
+      title: "PoliHack v.17",
+      heroText: "PoliHack v.17 marked the introduction of the Cybersecurity category, attracting over 160 university and high school students eager to develop innovative projects in software development, embedded systems, and cybersecurity. During these three intensive days, teams focused on turning ideas into functional prototypes, received mentorship, and showcased their projects to a jury of industry professionals.",
+      dates: "4-6 April 2025",
       location: "Cluj Bussiness Campus, Cloudflight Office",
       stats: [
-        { label: "Participants", value: 420 },
-        { label: "Teams", value: 420 },
-        { label: "Mentors", value: 420 },
+        { label: "Participants", value: 165 },
+        { label: "Teams", value: 39 },
+        { label: "Mentors", value: 18 },
       ],
       winnerCategories: [
         { category: "AppDev", team: "Shift_Happens", image: v17App },
-        { category: "Embedded", team: "HalfAByteParty", image: v17Embedded },
-        { category: "Junior", team: "TechTornado", image: v17Junior },
-        { category: "Web", team: "LTCode", image: v17Web },
         { category: "Cybersecurity", team: "Cyberbyte", image: v17Cyber },
+        { category: "Embedded", team: "HalfAByteParty", image: v17Embedded },
+        { category: "Web", team: "LTCode", image: v17Web },
+        { category: "Junior", team: "TechTornado", image: v17Junior },
+
       ],
     },
   };
@@ -192,50 +193,13 @@ function PastEditionsTwo() {
     <>
       <Header className={styles.header}></Header>
       <Content className={styles.content}>
-        {/* Top Banner */}
-        <div className={styles.bannerContainer}>
-          <img className={styles.bannerImage} src={Banner} alt="Past Editions 2" />
-          <div className={styles.typewriter}>
-            <h1>POLIHACK PAST EDITIONS 2</h1>
-          </div>
-        </div>
-        {/* Testimonials Section */}
-        <div className={styles.testimonialsSection}>
-          <h1 className={styles.headingHover}>Testimonials</h1>
-          <p className={styles.testimonialsText}>
-            Join the excitement of our hackathon! A dynamic event where
-            innovators, developers, and creatives collaborate to build
-            groundbreaking solutions. See what past participants, mentors and
-            judges have to say about their experience!
-          </p>
-          <Testimonials />
-        </div>
-        {/* Carousel Pictures */}
-        <div className={styles.carouselContainer}>
-          <h1 className={styles.headingHover}>See how is like</h1>
-          <p className={styles.carouselText}>
-            Every edition of PoliHack brings something new! Our goal is to
-            innovate, create and redefine the future, all while having fun in
-            the process. Join us for this exciting new edition and be part of
-            the next big breakthrough!
-            <br />
-            Following this, PoliHack v.16 was held from December 5–8, 2024,
-            welcoming creative teams who brought their ideas to life as real
-            prototypes. Participants again worked on their own projects,
-            benefited from mentor support, and presented their work to an
-            experienced jury. This edition also included a Networking Night,
-            offering valuable opportunities to meet fellow innovators, sponsors,
-            and tech professionals.
-          </p>
-          <Carousel images={carouselImages} />
-        </div>
-
-        {/* Past Editions 2 */}
+      <div style={{backgroundColor: "transparent", height: "4rem", width: "100%",}}></div>
+       {/* Past Editions 2 */}
         <section className={styles.pastEditionTwoSection}>
           <div className={styles.pastEditionTwoHeader}>
             <h1 className={styles.headingHover}>Relive the last editions</h1>
             <p className={styles.sectionIntro}>
-              Toggle between V.15 - V.17 to see the winning teams, core metrics,
+              Toggle between v.15 - v.17 to see the winning teams, core metrics,
               and standout learnings. Update the copy anytime straight from this
               data block.
             </p>
@@ -320,6 +284,39 @@ function PastEditionsTwo() {
         <div className={styles.webWinnersSection}>
           <h1 className={styles.headingHover}>Web Winners</h1>
         </div>
+        
+        {/* Testimonials Section */}
+        <div className={styles.testimonialsSection}>
+          <h1 className={styles.headingHover}>Testimonials</h1>
+          <p className={styles.testimonialsText}>
+            Join the excitement of our hackathon! A dynamic event where
+            innovators, developers, and creatives collaborate to build
+            groundbreaking solutions. See what past participants, mentors and
+            judges have to say about their experience!
+          </p>
+          <Testimonials />
+        </div>
+        {/* Carousel Pictures */}
+        <div className={styles.carouselContainer}>
+          <h1 className={styles.headingHover}>See how is like</h1>
+          <p className={styles.carouselText}>
+            Every edition of PoliHack brings something new! Our goal is to
+            innovate, create and redefine the future, all while having fun in
+            the process. Join us for this exciting new edition and be part of
+            the next big breakthrough!
+            <br />
+            Following this, PoliHack v.16 was held from December 5–8, 2024,
+            welcoming creative teams who brought their ideas to life as real
+            prototypes. Participants again worked on their own projects,
+            benefited from mentor support, and presented their work to an
+            experienced jury. This edition also included a Networking Night,
+            offering valuable opportunities to meet fellow innovators, sponsors,
+            and tech professionals.
+          </p>
+          <Carousel images={carouselImages} />
+        </div>
+
+        
       </Content>
       <Footer />
     </>
