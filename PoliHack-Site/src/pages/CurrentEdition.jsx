@@ -359,7 +359,7 @@ function CurrentEdition() {
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={12} md={12} lg={12}>
               <Document
-                title="ACORD PARENTAL"
+                title="PARENTAL CONSENT"
                 source={acordLink}
                 image={regulationsImage}
               />
@@ -380,3 +380,4 @@ function CurrentEdition() {
 }
 
 export default CurrentEdition;
+
