@@ -284,6 +284,9 @@ function CurrentEdition() {
   ];
 
   const programImage = DocumentBanner;
+  const regulationsLink = "https://drive.google.com/file/d/1wqj7VHUeTztDJjUdvJdGxabbkIwPVLq6/view?usp=sharing";
+  const regulations_singleLink = "https://drive.google.com/file/d/1IAN5pqH9IF4U9JD9cqrdvB5L_4lHXWN7/view?usp=sharing";
+  const acordLink = "https://drive.google.com/file/d/1P9vFJ2lGB1nn8PFTF4MSTn7IbJfchNmm/view?usp=sharing";
   const programLink = "https://drive.google.com/file/d/1wqj7VHUeTztDJjUdvJdGxabbkIwPVLq6/view?usp=sharing";
 
   const themeImage = DocumentBanner;
@@ -340,15 +343,15 @@ function CurrentEdition() {
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={12} md={12} lg={12}>
               <Document
-                title="PROGRAM"
-                source={programLink}
+                title="REGULATIONS"
+                source={regulationsLink}
                 image={programImage}
               />
             </Col>
             <Col xs={24} sm={12} md={12} lg={12}>
               <Document
-                title="THEMES"
-                source={programLink}
+                title="REGULATIONS (INDIVIDUAL PARTICIPANT)"
+                source={regulations_singleLink}
                 image={themeImage}
               />
             </Col>
@@ -356,13 +359,17 @@ function CurrentEdition() {
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={12} md={12} lg={12}>
               <Document
-                title="REGULATIONS"
-                source={programLink}
+                title="ACORD PARENTAL"
+                source={acordLink}
                 image={regulationsImage}
               />
             </Col>
             <Col xs={24} sm={12} md={12} lg={12}>
-              <Document title="TERMS" source={programLink} image={termsImage} />
+              <Document 
+                title="PROGRAM (COMING SOON)" 
+                /*source={programLink}*/ 
+                image={termsImage} 
+              />
             </Col>
           </Row>
         </div>

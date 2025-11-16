@@ -108,11 +108,15 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
+    .navbar {
+    padding-right: 0 !important;
+  }
     .menu-toggle {
       display: flex;
-      margin-right: 1rem !important;
+      margin-right: 0.5rem !important;
       margin-left: auto !important;
+      order: 1 !important;
     }
 
     .container {
@@ -161,4 +165,5 @@
       }
     }
   }
+
 }
