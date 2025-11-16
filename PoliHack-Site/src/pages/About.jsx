@@ -128,82 +128,50 @@ function About() {
           </p>
         </div>
         <div className={styles.teamSection}>
-          <h1 className={styles.headingHover}>Meet the team</h1>
-          {/* First Row */}
-          <Row className={styles.teamRow}>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Vlad Ormindean"
-                role="BC Responsible"
-                image={OrmindeanVlad}
-                instagram="https://www.instagram.com/__vld._/"
-                facebook="https://www.facebook.com/vlad.ormindean.1"
-              />
-            </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Diana Clim"
-                role="Coordinator"
-                image={ClimDiana}
-                instagram="https://www.instagram.com/dianaa_clim/"
-                facebook="https://www.facebook.com/diana.clim.1/"
-              />
-            </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Cordea Maria"
-                role="Secretary"
-                image={CordeaMaria}
-                instagram="https://www.instagram.com/cordea_maria/"
-                facebook="https://web.facebook.com/profile.php?id=100014599725620"
-              />
-            </Col>
-          </Row>
-          {/* Middle Row */}
-          <Row className={styles.teamRow}>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Constandache Ionela"
-                role="Co-coordinator"
-                image={ConstandacheIonela}
-                instagram="https://www.instagram.com/ionellaa__/"
-                facebook="https://www.facebook.com/profile.php?id=100005939417604"
-              />
-            </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Dolca Diana Alina"
-                role="Co-coordinator"
-                image={DolcaDiana}
-                instagram="https://www.instagram.com/ddiana.alina/"
-                facebook="https://www.facebook.com/dianaalina.dolca"
-              />
-            </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Nebuneli Alessandro"
-                role="Co-coordinator"
-                image={NebuneliAlessandro}
-                instagram="https://www.instagram.com/__alejrn3bu__/"
-                facebook="https://www.facebook.com/alessandro.junior2005"
-              />
-            </Col>
-          </Row>
-          {/* Last Row */}
-          <Row className={styles.teamRow}>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}></Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}>
-              <TeamCard
-                name="Chirila Iulian"
-                role="Co-coordinator"
-                image={ChirilaIulian}
-                instagram="https://www.instagram.com/c.iulian08/"
-                facebook="https://www.facebook.com/profile.php?id=100084863419146"
-              />
-            </Col>
-            <Col span={7} lg={8} md={12} sm={24} xs={24}></Col>
-          </Row>
-        </div>
+  <h1 className={styles.headingHover}>Meet the team</h1>
+
+  {/* FIRST ROW — 3 people */}
+  <Row className={styles.teamRow} justify="center" gutter={[32, 32]}>
+    <Col span={8} md={8} sm={24} xs={24}>
+      <TeamCard name="Vlad Ormindean" role="BC Responsible" image={OrmindeanVlad}
+        instagram="https://www.instagram.com/__vld._/" facebook="https://www.facebook.com/vlad.ormindean.1" />
+    </Col>
+
+    <Col span={8} md={8} sm={24} xs={24}>
+      <TeamCard name="Diana Clim" role="Coordinator" image={ClimDiana}
+        instagram="https://www.instagram.com/dianaa_clim/" facebook="https://www.facebook.com/diana.clim.1/" />
+    </Col>
+
+    <Col span={8} md={8} sm={24} xs={24}>
+      <TeamCard name="Cordea Maria" role="Secretary" image={CordeaMaria}
+        instagram="https://www.instagram.com/cordea_maria/" facebook="https://web.facebook.com/profile.php?id=100014599725620" />
+    </Col>
+  </Row>
+
+  {/* SECOND ROW — 4 people */}
+  <Row className={styles.teamRow} justify="center" gutter={[32, 32]}>
+    <Col span={6} md={6} sm={12} xs={24}>
+      <TeamCard name="Constandache Ionela" role="Co-coordinator" image={ConstandacheIonela}
+        instagram="https://www.instagram.com/ionellaa__/" facebook="https://www.facebook.com/profile.php?id=100005939417604" />
+    </Col>
+
+    <Col span={6} md={6} sm={12} xs={24}>
+      <TeamCard name="Dolca Diana Alina" role="Co-coordinator" image={DolcaDiana}
+        instagram="https://www.instagram.com/ddiana.alina/" facebook="https://www.facebook.com/dianaalina.dolca" />
+    </Col>
+
+    <Col span={6} md={6} sm={12} xs={24}>
+      <TeamCard name="Nebuneli Alessandro" role="Co-coordinator" image={NebuneliAlessandro}
+        instagram="https://www.instagram.com/__alejrn3bu__/" facebook="https://www.facebook.com/alessandro.junior2005" />
+    </Col>
+
+    <Col span={6} md={6} sm={12} xs={24}>
+      <TeamCard name="Chirila Iulian" role="Co-coordinator" image={ChirilaIulian}
+        instagram="https://www.instagram.com/c.iulian08/" facebook="https://www.facebook.com/profile.php?id=100084863419146" />
+    </Col>
+  </Row>
+</div>
+
       </Content>
     </>
   );
